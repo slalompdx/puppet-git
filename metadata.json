@@ -1,0 +1,33 @@
+{
+  "name": "slalompdx-git",
+  "version": "0.1.0",
+  "author": "slalompdx",
+  "summary": "Install git on multiple platforms",
+  "license": "Apache 2.0",
+  "source": "https://github.com/slalompdx/puppet-git",
+  "project_page": "https://github.com/slalompdx/puppet-git",
+  "issues_url": "https://github.com/slalompdx/puppet-git/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    }
+  ]
+}
