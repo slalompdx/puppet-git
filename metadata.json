@@ -1,7 +1,7 @@
 {
   "name": "slalompdx-git",
   "version": "0.1.0",
-  "author": "slalompdx",
+  "author": "eshamow",
   "summary": "Install git on multiple platforms",
   "license": "Apache 2.0",
   "source": "https://github.com/slalompdx/puppet-git",
