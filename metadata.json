@@ -1,6 +1,6 @@
 {
   "name": "eshamow-git",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "eshamow",
   "summary": "Install git on multiple platforms",
   "license": "Apache 2.0",
