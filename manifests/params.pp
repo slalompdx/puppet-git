@@ -7,6 +7,7 @@ class git::params {
   case $::osfamily {
     'Windows': {
       $package_name = 'git'
+    }
     default: {
       fail("${::operatingsystem} not supported")
     }
