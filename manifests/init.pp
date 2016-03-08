@@ -11,14 +11,13 @@
 #   e.g. "Specify one or more upstream ntp servers as an array."
 #
 class git (
-  $package_name = $::git::params::package_name,
-  $service_name = $::git::params::service_name,
+  $install_chocolatey = ::git::params::install_chocolatey,
 ) inherits ::git::params {
 
   # validate parameters here
+  validate_bool($install_chocolatey)
 
-  class { '::git::install': } ->
-  class { '::git::config': } ~>
-  class { '::git::service': } ->
-  Class['::git']
+  if $install_chocolatey {
+    include chocolatey
+  }
 }

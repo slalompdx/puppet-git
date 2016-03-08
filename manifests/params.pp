@@ -5,16 +5,11 @@
 #
 class git::params {
   case $::osfamily {
-    'Debian': {
+    'Windows': {
       $package_name = 'git'
-      $service_name = 'git'
-    }
-    'RedHat', 'Amazon': {
-      $package_name = 'git'
-      $service_name = 'git'
-    }
     default: {
       fail("${::operatingsystem} not supported")
     }
   }
+  $install_chocolatey = false
 }
