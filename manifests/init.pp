@@ -20,4 +20,8 @@ class git (
   if $install_chocolatey {
     include chocolatey
   }
+
+  package { 'git':
+    ensure => present,
+  }
 }
